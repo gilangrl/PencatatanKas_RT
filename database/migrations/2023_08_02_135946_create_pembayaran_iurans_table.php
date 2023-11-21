@@ -16,7 +16,7 @@ class CreatePembayaranIuransTable extends Migration
         Schema::create('pembayaran_iurans', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedBigInteger('id_warga');
-            $table->decimal('jumalah', 10,2);
+            $table->decimal('jumlah', 10,2);
             $table->date('tanggal_pembayaran');
             $table->timestamps();
 
